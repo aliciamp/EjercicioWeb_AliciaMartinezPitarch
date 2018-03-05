@@ -1,0 +1,41 @@
+// Font families
+$main-font-family: 'EB Garamond', serif;
+$title-font-family: 'Montserrat', sans-serif;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+// Base colors
+$color-liver-organ: #875f63;
+$color-persian-orange: #F5FAFB;
+$color-windspr-tan: #EBF4F7;
+$color-banana-mania: #F3F4B5;
+$color-silver: #DBDBDB;
+$color-acajou: #4D2A2D;
+$color-dutch-white: #2A2623;
+$color-isabelline: #EDE9EA;
+
+
+// Main components colors
+$main-text-color: $color-liver-organ;
+$links-color: $color-windspr-tan;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+
+

@@ -1,0 +1,123 @@
+.recipe-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: $color-persian-orange;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 60%;
+
+    .recipe-date{
+        text-align: right;
+        font-style: italic;
+    }
+
+    .form{
+        .p{
+            margin-top: 10px;
+            border-top: 1px solid black;
+        }
+    }
+
+    @include if-tablet-landscape{
+        margin-left: 32%;
+    }
+    .title-recipe{
+        padding: 5px;
+        font-weight: bold;
+        font-size: 24pt;
+        margin: 20px;
+        text-align: center;
+        font-family: $title-font-family;
+    }
+
+    .foto-recipe{
+        width: 100%;
+        padding: 5px;
+        margin: 0px auto;
+    }
+
+    .web-text{
+        padding: 10px 0px 10px 0px;
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    .ingredients-title{
+        margin: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    ul{
+        font-weight: normal;
+        list-style-type: disc;
+        font-size: 17px;
+        margin-left: 10px;
+        margin: 0px auto;
+
+        padding: 10px; 
+         
+
+        li{
+            padding: 5px;
+        }          
+    }
+    ol{
+        font-weight: normal;
+        list-style-type: decimal;
+        font-size: 15px;
+        margin-left: 10px;
+        margin: 0px auto;
+
+        padding-left: 10px; 
+        li{
+            padding: 5px;
+        }  
+          
+    }
+
+    @include if-tablet{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 60%;
+
+        margin-left: 30% auto; 
+        .recipe-container{   
+            margin: 0px auto;
+            padding: 30px;
+        }         
+        
+        .name{
+            font-size: 8px;
+        }
+        .foto-recipe{
+            width: 60%;
+            margin: 0px auto;
+        }
+        
+        .listado-recipe{           
+                display: flex;
+                flex-flow: row,wrap;
+                justify-content: space-around;
+                height: 300px;
+                .ingredients-title{
+                    margin: 10px;
+                    padding-bottom: 10px;
+                } 
+        }
+
+        ol{
+            padding: 30px;
+            li{
+                padding: 5px;
+            }
+        }
+    }
+    
+}

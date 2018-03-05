@@ -1,0 +1,114 @@
+.web-articles{
+    padding-bottom: 50px;
+    .recipe {
+        
+        display: flex;
+        justify-content: center;
+        flex-flow: row, wrap;
+
+        background-color: $color-persian-orange;
+        color: $color-dutch-white;
+        border-radius: 5px;
+        
+        box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3);
+        
+        height: 400px;
+        width: 300px;
+
+        margin: 5px;
+        padding: 10px;
+
+        .principal-thumb {
+            width: 100%;
+            height: 200px;
+
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .elements{
+            width: 250px;
+            margin-top: auto;
+            padding-bottom: 5px;
+          
+        }
+        .thumb {
+            height: 100%;
+            width: 100%;
+    
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: all .2s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .uno {background-image: url(../../../img/pizza.jpg);}
+        .dos {background-image: url(../../../img/wes.jpg);}
+        .tres {background-image: url(../../../img/burguer.jpg);}
+        .cuatro {background-image: url(../../../img/tiana.jpg);}
+        .cinco {background-image: url(../../../img/queso.jpg);}
+        .seis {background-image: url(../../../img/apple.jpg);}
+        .siete {background-image: url(../../../img/tartin.jpg);}
+        .ocho {background-image: url(../../../img/pollo.jpg);}
+        .nueve {background-image: url(../../../img/tamal.jpg);}
+        .diez {background-image: url(../../../img/tarta.jpg);}
+        
+}
+
+    @include if-tablet{
+        display: flex;
+        justify-content: center;
+        flex-flow: row, wrap;
+        float: right;
+        
+        .name{
+            font-size: 8px;
+        }  
+    }
+
+    @include if-tablet-landscape{
+        display: flex;
+        justify-content: center;
+        flex-flow: row, wrap;
+        margin-left: 30%;  
+        .name{
+            font-size: 8px;
+        }  
+    }
+
+
+     
+    .photo {
+        width: 100%;
+    }
+
+    .name {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 24pt;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: $title-font-family;      
+    }
+
+    .date {
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 14px; 
+    }
+    
+    .film{
+        bottom: 0px;
+        font-style: italic;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+}
+        

@@ -1,0 +1,65 @@
+body{
+    padding-bottom: 30px;
+    background-image: url("../img/fondo2.png");
+    background-repeat: repeat;
+    background-color: #73A6C6;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input{
+    margin: 0px auto;
+    background-color: $color-isabelline;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 2px solid $color-isabelline;
+}
+textarea{
+    margin: 0px auto;
+    background-color: $color-isabelline;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 2px solid $color-isabelline;
+    border-radius: 5px;  
+}
+
+
+option{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+button{
+    font-family: $title-font-family;
+    background-color: $color-isabelline;
+    border: 2px solid $color-isabelline;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+
+    &:hover{
+        transition: 0.3s;
+        background-color: $color-acajou;
+        color:white;
+    }
+}
+
+.texto{
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+}
+
+i{
+    font-style: italic;
+}
+

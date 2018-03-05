@@ -1,0 +1,125 @@
+.web-header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $color-acajou;
+    color:$color-persian-orange;
+
+    font-family: $title-font-family;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 15px;
+
+    .elements{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+//padding: 20px;
+        .web-logo{
+            width: 150px;;
+        }
+        .web-title {
+            display: none;
+        }
+        .search{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            .lupa{
+                margin-right:5px; 
+                width: 25px;
+                }
+            .busquedas{
+                margin-bottom: 5px;
+            
+            }
+        }
+    }
+    .web-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .enlaces{
+            font-family: $title-font-family;
+            font-size: $font-size-large;
+            padding: 15px 5px 0px 5px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+
+            transition: all .3s ease-in-out;
+            &:hover{
+            background-color: black;
+            
+                }
+        }
+
+    }
+
+    .web-social{
+        display: none;
+    }
+
+    @include if-desktop{
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+
+
+        .elements{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            .web-logo{
+                width: 250px;;
+            }
+            .web-title {
+                text-align: center;
+                font-weight: bold;
+                font-size: 40px;
+                margin-top: 100px;
+                padding-bottom: 30px;
+            }
+            .search{
+                display:flex;
+                align-items: baseline;
+
+                margin: auto;
+                padding-bottom:30px; 
+                .lupa{
+                    margin-right:5px; 
+                    width: 25px;
+                    }
+            }
+        }
+        .web-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .enlaces{
+                padding-bottom: 20px;
+            
+                font-family: $title-font-family;
+                font-size: $font-size-large;
+            }
+
+        }
+        .web-social{
+            display: flex;
+            justify-content: space-around;
+            .foto-social{
+                width: 40px;
+            }
+        }
+
+    }
+    
+}
+
+

@@ -1,0 +1,87 @@
+.inscripcion{
+    background-color: $color-persian-orange;
+    color:$color-dutch-white;
+    border-radius: 5px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    font-size: 20px;
+    font-family: $title-font-family;
+    font-weight: normal;
+
+
+    margin:5% auto;
+    margin-right: 10px;
+    padding: 30px;
+    width: fit-content;
+    @include if-desktop{
+        margin-left: 35%;
+    }
+    .info-title{
+        font-family: $title-font-family;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 10px;
+        
+    }
+    .web-inscripcion{
+        display: flex;
+        justify-content: space-around;
+
+        margin-top: 30px;
+            .usuario{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .password{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .password2{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .email{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .paneles{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .form-ubi{
+                padding: 5px;
+
+            }
+
+            .espacio{
+                width: 200px;
+                height: 20px;
+            }
+            .form-name{
+                padding-bottom: 10px;
+                }
+
+                .web-social{
+                    display: flex;
+                    flex-flow: row, wrap;
+                    width: 100px;
+                }
+                .foto-social{
+                    margin: 5px;
+                    width: 50px;
+
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+
+}
+
+}
+

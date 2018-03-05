@@ -1,0 +1,47 @@
+
+.web-info{
+    background-color: $color-persian-orange;
+    color:$color-dutch-white;
+    border-radius: 5px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    font-family:$main-font-family;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin:5% auto;
+    padding: 30px;
+    width: fit-content;
+    height: 100%;
+    
+    font-size: 20px;
+    @include if-desktop{
+        margin-left: 35%;
+    }
+
+    .info-title{
+        font-family: $title-font-family;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 10px;
+        
+    }
+
+    ul{
+        list-style-type: disc;
+        margin-left: 10px;
+        margin: 15px auto;
+
+        padding-left: 10px;       
+    }
+
+    
+    li{
+        padding: 5px;
+    }
+
+
+}
+

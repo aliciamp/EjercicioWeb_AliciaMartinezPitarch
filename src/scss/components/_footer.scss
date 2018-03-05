@@ -1,0 +1,45 @@
+.web-footer {
+    color: white;
+    background-color: $color-liver-organ;
+    font-family: $title-font-family;
+    font-weight: normal;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding-top:10px;
+
+    .flecha{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        .web-up{
+            width: 30px;
+        }
+    }
+
+    @include if-desktop{
+        color: white;
+        background-color: transparent;
+        display: flex;
+        position:fixed;
+        bottom: 0px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+
+        .web-footer-d{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+    }
+
+
+}
